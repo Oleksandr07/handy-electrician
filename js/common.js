@@ -25,7 +25,7 @@ $(function(){
 		trigger: 'click',
 		theme: 'tooltipster-noir',
 	});
-
+	
 	//------------------    menu scroll    -------------------------------
 
 	$('.top_menu li a.subNavBtn').on('click',function(){
@@ -78,6 +78,61 @@ $(function(){
 		centerMode: true,
 		variableWidth: true
 	});
+
+	//------------------    form relevant    -------------------------------
+	$('.fancybox').click(function(){
+		$('#modal_window .form_title').text($(this).attr('data-title'));
+		$('#modal_window .a_button').text($(this).attr('data-button'));
+		$('#modal_window .form_name').val($(this).attr('data-pos'));
+	});
+
+	/* - - - - - - - - - - - - - -   Отправка формы  - - - - - - - - - - - - - - - - */
+	$('.send-button').click(function(){
+     var parentClass=$(this).attr('rel');
+	 var paramsFancy={
+	    'scrolling':0,
+	    'autoScale': true,
+	    'transitionIn': 'elastic',
+	    'transitionOut': 'elastic',
+	    'speedIn': 500,
+	    'speedOut': 300,
+	    'autoDimensions': true,
+	    'centerOnScroll': true,
+	    'href' : '#modal-success',
+	    'padding' : '0',
+	    'height' : 'auto',
+	    helpers: {
+	            overlay: {
+	              locked: false
+	            }
+	        }
+	    };
+	    validate=1;
+	    validate_msg='';
+	    form=$('#'+$(this).attr('data-rel'));
+	     jQuery.each(form.find('.validate'), function(key, value) {
+	        if($(this).val()==''){
+	            validate_msg+=$(this).attr('title')+'\n';validate=0;
+	            $(this).focus();
+	            $(this).addClass('red-input');
+	        }else{
+	            $(this).removeClass('red_input');
+	        }
+	    });
+	    if(validate==1){
+	        $.ajax({
+	            url: 'ajax.php',
+	            data: 'action=send-form&'+form.serialize(),
+	            success: function(data){
+	                $.fancybox.open(paramsFancy);
+	            }
+	        });
+	        
+	    }else{
+	        /*alert(validate_msg);*/
+	    } 
+	});
+
 
 
 });

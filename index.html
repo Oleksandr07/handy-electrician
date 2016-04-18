@@ -35,7 +35,7 @@
 			<ul>
 				<li><a href="#head" class="subNavBtn">Главная</a></li>
 				<li><a href="#project" class="subNavBtn">Проекты</a></li>
-				<li><a href="#reviews" class="">Отзывы</a></li>
+				<li><a href="#production" class="subNavBtn">ПРОИЗВОДСТВО</a></li>
 				<li><a href="#questions" class="subNavBtn">вопрос-ответ</a></li>
 				<li><a href="#team" class="subNavBtn">команда</a></li>
 				<li class="site-link"><a href="http://anb-rus.ru/" target="_blank">anb-rus.ru</a></li>
@@ -91,7 +91,7 @@
 				</div>
 				<div class="head-form">
 					<div class="form-box">
-						<form action="#">
+						<form id="form2" onsubmit='return false' autocomplete="off">
 							<div class="form-title">электрика XXI века</div>
 							<div class="form-body">
 								<div class="form-text">
@@ -99,13 +99,18 @@
 									<p>Закажите расчет проекта БЕСПЛАТНО</p>
 								</div>
 								<div class="form-fields">
-									<input type="tel" placeholder="Введите свой номер телефона:" name="phone">
+									<input type="tel" placeholder="Введите свой номер телефона:" name="phone" class="validate">
 								</div>
 								<div class="form-button">
-									<input type="submit" value="Заказать расчет!">
+									<!-- <input type="submit" value="Заказать расчет!"> -->
+									<a class="a-button send-button" data-rel='form2'>Заказать расчет!</a>
 								</div>
 							</div>
+							<input class="form-name" type="hidden" name="form-name" value="Отправить"/>
+							<input type="hidden" name="action" value='send-form'/>
+							<input type="hidden" name="action-type" value='form-message'/>
 						</form>
+
 					</div>
 				</div>
 			</div>
@@ -741,7 +746,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="production">
+	<div id="production" class="production">
 		<div class="container">
 			<h2>наше производство</h2>
 			<div class="production-inner">
@@ -768,54 +773,63 @@
 					<div class="questions-text">
 						<p>Любой нормальный электрик! Если у него нет навыков работы с компьютером, мы поможем ему всё правильно настроить. Вы можете прислать к нам на БЕСПЛАТНОЕ обучение ваших электриков (1 день) или воспользоваться услугами наших Партнёров.</p>
 					</div>
+					<div class="questions-icon">?</div>
 				</div>
 				<div class="questions-box">
 					<div class="questions-title">Чем Вы отличаетесь от "Умного дома"?</div>
 					<div class="questions-text">
 						<p>Главный кирпичик "Удобной электрики" - двухконтурная проводка, которая устраняет недостатки обычной электрики и предвносит УДОБНЫЙ функционал. Т.е. мы просто оснащаем объекты электрикой на современном техническом уровне. Ни каких Умных функций, которые требуют поддержки, коррекции настроек и т.д. - НЕТ. Ну и ценой, конечно!</p>
 					</div>
+					<div class="questions-icon">?</div>
 				</div>
 				<div class="questions-box">
 					<div class="questions-title">Где можно использовать "Удобную электрику"?</div>
 					<div class="questions-text">
 						<p>На любых объектах, где предстоит монтаж электрики "с нуля" - квартиры, коттеджи, бани, теплицы, гаражи, офисы, гостиницы, школы и т.д. "Удобную электрику" можно использовать и на тех объектах, где электрика уже смонтированна, но целесообразность её применения нужно рассматривать в каждом конкретном случае.</p>
 					</div>
+					<div class="questions-icon">?</div>
 				</div>
 				<div class="questions-box">
 					<div class="questions-title">Какие выключатели можно использовать?</div>
 					<div class="questions-text">
 						<p>Можно использовать любые по конструкции и производителю выключатели с фиксацией и кнопки-переключатели без фиксации. Ни каких специальных требований нет. Каждый выключатель или кнопка-переключатель подключаются к 2-х проводной шине через маленький драйвер, который совместно устанавливается в монтажный стакан.</p>
 					</div>
+					<div class="questions-icon">?</div>
 				</div>
 				<div class="questions-box">
 					<div class="questions-title">За счёт чего достигается экономия электроэнергии?</div>
 					<div class="questions-text">
 						<p>За счёт функции "Выключить ВСЁ" и Таймеров, которые позволяют эффективно использовать электроэнергию в туалетах, холлах, коридорах, гаражах и т.д. Возможность управления электрикой со смартфонов также способствует своевременному отключению не нужных источников освещения.</p>
 					</div>
+					<div class="questions-icon">?</div>
 				</div>
 				<div class="questions-box">
 					<div class="questions-title">А насколько надёжно Ваше оборудование?</div>
 					<div class="questions-text">
 						<p>Вам не нужно бояться сбоев в работе "Удобной электрики" - мы можем гарантировать качество и надежность. Лучшее доказательство тому - отзывы клиентов, которые установили оборудование более 30 лет назад и до сих пор его эксплуатируют без сбоев в работе.</p>
 					</div>
+					<div class="questions-icon">?</div>
 				</div>
 				<div class="questions-box">
 					<div class="questions-title">А если в сети 220В будет скачок напряжения?</div>
 					<div class="questions-text">
 						<p>Если Ваша сеть не отличается стабильностью параметров, у нас есть специальный модуль защиты, который защищает оборудование при повышении сетевого напряжения до 380В.</p>
 					</div>
+					<div class="questions-icon">?</div>
 				</div>
 				<div class="questions-box">
 					<div class="questions-title">Если что-то всё же сломалось?</div>
 					<div class="questions-text">
 						<p>Гарантия на всё наше оборудование - 3 года. Оборудование разработано с учётом простой и быстрой замены любого модуля. В случае поломки даже в постгарантийный период, мы обязуемся в самые короткие сроки бесплатно поставить нужный модуль, даже если Вы покупали ни у нас, а у наших Партнёров, а они, например, сменили деятельность или закрылись. А уже после возобновления работы объекта будем решать, что и почему произошло. Мы держим на складе неприкосновенный запас для экстренных ситуаций.</p>
 					</div>
+					<div class="questions-icon">?</div>
 				</div>
 				<div class="questions-box">
 					<div class="questions-title">Станет ли меньше силовых проводов?</div>
 					<div class="questions-text">
 						<p>Однозначно ответить на этот вопрос трудно, т.к. это сильно зависит от конфигурации объекта. Если в вашем проекте из щитка идёт один провод на все розетки, а второй провод на всё освещение, то в нашем случае проводов станет больше. Если же всё грамотно распределено по отдельным помещениям, то у нас проводов станет меньше или останется аналогичным. Но уменьшение количества силовых проводов - не является самоцелью, хотя мы в любом случае прилагаем все усилия для оптимизации их количества.</p>
 					</div>
+					<div class="questions-icon">?</div>
 				</div>
 			</div>
 		</div>
@@ -893,16 +907,20 @@
 
 	<div id="modal-window" class="modal">
 		<div class="form-box">
-			<form action="#">
+			<form id="form1" onsubmit='return false' autocomplete="off">
 				<div class="form-title">Введите свои контактные данные и наш менеджер свяжется с вами</div>
 				<div class="form-body">
-					<input type="text" placeholder="Введите свой Имя:" name="name" required>
-					<input type="email" placeholder="Введите свой Email:" name="email" required>
-					<input type="tel" placeholder="Введите свой номер телефона:" name="phone" required>
+					<input type="text" placeholder="Введите свой Имя:" name="name" class="validate">
+					<input type="email" placeholder="Введите свой Email:" name="email" class="validate">
+					<input type="tel" placeholder="Введите свой номер телефона:" name="phone" class="validate">
 				</div>
 				<div class="form-button">
-					<input type="submit" value="Заказать">
+					<!-- <input type="submit" value="Заказать"> -->
+					<a class="a-button send-button" data-rel='form1'>Заказать</a>
 				</div>
+				<input class="form-name" type="hidden" name="form-name" value="Отправить"/>
+				<input type="hidden" name="action" value='send-form'/>
+				<input type="hidden" name="action-type" value='form-message'/>
 			</form>
 		</div>
 	</div>

@@ -102,7 +102,7 @@ h2{position: relative;color: #6a9300;font-size: 52px;font-weight: 700;line-heigh
 	}
 	li{
 		display: inline-block;
-		margin: 0 35px;
+		margin: 0 30px;
 		a{
 			position: relative;
 			display: block;
@@ -1216,8 +1216,7 @@ h2{position: relative;color: #6a9300;font-size: 52px;font-weight: 700;line-heigh
 			padding: 0 20px;
 			margin-bottom: 60px;
 			box-sizing: border-box;
-			&:before{
-				content: '?';
+			.questions-icon{
 				background: #43a7ef;
 				position: absolute;
 				top: -40px;
@@ -1231,7 +1230,55 @@ h2{position: relative;color: #6a9300;font-size: 52px;font-weight: 700;line-heigh
 				text-align: center;
 				border-radius: 50%;
 			}
+			&:hover .questions-icon{
+				-webkit-animation: tada 1s ease; /* Chrome, Safari, Opera */
+    			animation: tada 1s ease;
+			}
 		}
+			@-webkit-keyframes tada {
+				from {
+					-webkit-transform: scale3d(1, 1, 1);
+					transform: scale3d(1, 1, 1);
+				}
+				10%, 20% {
+					-webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -15deg);
+					transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -15deg);
+				}
+				30%, 50%, 70%, 90% {
+					-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 15deg);
+					transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 15deg);
+				}
+				40%, 60%, 80% {
+					-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -15deg);
+					transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -15deg);
+				}
+				to {
+					-webkit-transform: scale3d(1, 1, 1);
+					transform: scale3d(1, 1, 1);
+				}
+			}
+			@keyframes tada {
+				from {
+					-webkit-transform: scale3d(1, 1, 1);
+					transform: scale3d(1, 1, 1);
+				}
+				10%, 20% {
+					-webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -15deg);
+					transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -15deg);
+				}
+				30%, 50%, 70%, 90% {
+					-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 15deg);
+					transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 15deg);
+				}
+				40%, 60%, 80% {
+					-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -15deg);
+					transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -15deg);
+				}
+				to {
+					-webkit-transform: scale3d(1, 1, 1);
+					transform: scale3d(1, 1, 1);
+				}
+			}
 			.questions-title{
 				color: #313131;
 				font-size: 26px;
