@@ -25,7 +25,7 @@ $(function(){
 		trigger: 'click',
 		theme: 'tooltipster-noir',
 	});
-	
+
 	//------------------    menu scroll    -------------------------------
 
 	$('.top_menu li a.subNavBtn').on('click',function(){
@@ -68,6 +68,21 @@ $(function(){
 			$parent.removeClass('active');
 			$parent.find('.questions-text').slideUp(300)
 		}
+	});
+
+	$('.video-1').mediaelementplayer({
+    	videoWidth: 940,
+    	videoHeight: 580,
+	});
+	$('.video-2').mediaelementplayer({
+		videoWidth: 570,
+    	videoHeight: 380,
+		features: ['progress','postroll']
+	});
+	$('.video-3').mediaelementplayer({
+		videoWidth: 470,
+    	videoHeight: 315,
+		features: ['progress','postroll']
 	});
 
 	$('.certificates-slider').slick({

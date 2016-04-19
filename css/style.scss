@@ -465,7 +465,7 @@ h2{position: relative;color: #6a9300;font-size: 52px;font-weight: 700;line-heigh
 			}
 			.installation-text{
 				position: relative;
-				font-size: 14px;
+				font-size: 15px;
 				font-weight: 300;
 				line-height: 22px;
 			}
@@ -677,7 +677,7 @@ h2{position: relative;color: #6a9300;font-size: 52px;font-weight: 700;line-heigh
 			.functionality-text{
 				position: relative;
 				color: #828282;
-				font-size: 14px;
+				font-size: 15px;
 				font-weight: 300;
 				line-height: 22px;
 			}
@@ -821,15 +821,68 @@ h2{position: relative;color: #6a9300;font-size: 52px;font-weight: 700;line-heigh
 				border: 8px solid #6a9300;
 				margin-bottom: 30px;
 			}
+			table{
+				width: 100%;
+				border: 8px solid #6a9300;
+				margin-bottom: 20px;
+				thead{
+					tr{
+						td, th{
+							font-weight: 700;
+							&:nth-child(1){
+								text-align: center;
+							}
+						}
+					}
+				}
+				tbody{
+					tr{
+						td{	
+							&:nth-child(1){
+								width: 340px;
+								text-align: left;
+							}
+							&:nth-child(2){
+								width: 170px;
+							}
+							&:nth-child(3){
+								width: 90px;
+							}
+							&:nth-child(4){
+								width: 130px;
+							}
+							&:nth-child(5){
+								width: 90px;
+							}
+							&:nth-child(6){
+								width: 130px;
+							}
+							&:nth-child(7){
+								width: 90px;
+							}
+							&:nth-child(8){
+								width: 130px;
+							}
+						}
+					}
+				}
+				tr{
+					td{
+						vertical-align: middle;
+						background: #dcf3ff;
+						color: #333;
+						font-size: 16px;
+						font-weight: 300;
+						font-family: 'Roboto', sans-serif;
+						text-align: center;
+						border: 1px solid #2f4783;
+						padding: 0 10px;
+						margin-bottom: 30px;
+						box-sizing: border-box;
+					}
+				}
+			}
 		}
-		// .solutions-img{
-		// 	line-height: 0;
-		// 	border: 8px solid #6a9300;
-		// 	margin-bottom: 30px;
-		// 	img{
-		// 		max-width: 100%;
-		// 	}
-		// }
 	.solutions-set{
 		position: relative;
 		overflow: hidden;
@@ -1025,7 +1078,7 @@ h2{position: relative;color: #6a9300;font-size: 52px;font-weight: 700;line-heigh
 			}
 			.benefits-text{
 				position: relative;
-				font-size: 14px;
+				font-size: 15px;
 				font-weight: 300;
 				line-height: 22px;
 				padding: 0 40px;
@@ -1401,3 +1454,109 @@ footer{
 body input.red-input{
 	border-color: #cc0000;
 }
+
+.player-1{
+	width: 940px;
+	height: 580px;
+	margin: 0 auto;
+}
+	.video-1{
+		width: 100%;
+		height: 100%;
+	}	
+.player-2{
+	width: 570px;
+	height: 380px;
+}
+	.video-2{
+		width: 100%;
+		height: 100%;
+	}
+.player-3{
+	width: 470px;
+	height: 315px;
+}
+	.video-3{
+		width: 100%;
+		height: 100%;
+	}
+
+	.mejs-poster{
+		background-size: cover;
+	}
+	.player-2 .mejs-container, .player-2,
+	.player-3 .mejs-container, .player-3{
+		border-radius: 30px;
+		overflow: hidden;
+	}
+	.player-2 .mejs-container .mejs-controls,
+	.player-3 .mejs-container .mejs-controls{
+		background: transparent !important;
+		left: 5%;
+		width: 90%;
+	}
+	.player-2 .mejs-controls .mejs-time-rail .mejs-time-total,
+	.player-3 .mejs-controls .mejs-time-rail .mejs-time-total{
+		height: 6px;
+	}
+	.player-2 .mejs-controls .mejs-time-rail .mejs-time-loaded,
+	.player-3 .mejs-controls .mejs-time-rail .mejs-time-loaded{
+		background: #c00;
+		height: 6px;
+	}
+	.player-2 .mejs-controls .mejs-time-rail .mejs-time-current,
+	.player-3 .mejs-controls .mejs-time-rail .mejs-time-current{
+		height: 6px;
+	}
+	.player-2 .mejs-controls .mejs-time-rail span,
+	.player-3 .mejs-controls .mejs-time-rail span{
+		height: 6px;
+	}
+	.player-2 .mejs-controls .mejs-time-rail span.mejs-time-float,
+	.player-3 .mejs-controls .mejs-time-rail span.mejs-time-float{
+		height: 15px;
+	}
+	.player-2 .mejs-overlay-button{
+		background: url('../img/play.png') center no-repeat;
+		background-size: cover;
+		background-position: 0 0;
+		width: 224px;
+		height: 224px;
+		margin: -130px 0 0 -112px;
+		opacity: 0.3;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+	.player-2 .mejs-overlay:hover .mejs-overlay-button{
+		background-position: 0 0;
+		opacity: 0.8;
+	}
+	.player-3 .mejs-overlay-button{
+		background: url('../img/play.png') center no-repeat;
+		background-size: cover;
+		background-position: 0 0;
+		width: 180px;
+		height: 180px;
+		margin: -110px 0 0 -90px;
+		opacity: 0.3;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+	.player-3 .mejs-overlay:hover .mejs-overlay-button{
+		background-position: 0 0;
+		opacity: 0.8;
+	}
+	.player-2 iframe{
+		width: 550px;
+	    height: 365px;
+	    margin: 7px 10px;
+	}
+	.player-3 iframe{
+		width: 450px;
+		height: 300px;
+	    margin: 8px 10px;
+	}
