@@ -1,0 +1,82 @@
+@media only screen and (max-width:1199px) {
+	.container{width: 990px;padding: 0 10px;}
+	h1{font-size: 54px;}
+	.slogan{width: 530px;margin-left: 0;}
+	.head-box{font-size: 32px;}
+	.house-box{top: 30px;}
+		.house-inner{left: -50px;width: 440px;}
+			.house-inner-2{left: 140px;}
+			.house-inner-3{left: 270px;}
+			.house-inner-4{top: 180px;left: 170px;}
+			.house-inner-5{top: 200px;left: 290px;}
+		.house-outer{width: 380px;}
+			.house-outer-1{left: 110px;}
+			.house-outer-2{top: 150px;left: 75px;}
+			.house-outer-3{top: 230px;left: 80px;}
+			.house-outer-4{top: 80px;left: 200px;}
+			.house-outer-5{top: 150px;left: 230px;}
+			.house-outer-6{top: 150px;left: 290px;}
+			.house-outer-7{top: 210px;left: 300px;}
+			.house-outer-8{top: 240px;left: 190px;}
+			.house-outer-9{top: 300px;left: 215px;}
+	.installation-box{width: 175px;}
+		.installation-title{height: 75px;}
+	.project-left{width: 500px;}
+		.project-img{width: 235px;height: 185px;}
+	.project-right{width: 460px;}
+	.functionality-box{margin: 0 15px 40px;}
+	#snake{margin: 0;overflow: hidden;
+		svg{width: 990px;}
+	}
+	#like{
+		left: 0;
+	}
+	.scheme-work{
+		.scheme-1{left: 137px;}
+		.scheme-2{left: 258px;}
+		.scheme-3{left: 677px;}
+		.scheme-4{left: 450px;}
+		.scheme-5{left: 93px;}
+		.scheme-6{left: 143px;}
+		.scheme-7{left: 627px;}
+	}
+	.set-box{width: 480px;}
+	.team-inner{display: block;}
+		.team-video{display: block;width: 470px;padding-right: 0;margin: 0 auto 30px;}
+		.team-list{display: block;width: auto;}
+			.team-box{margin-left: 40px;
+				&:nth-child(2n+1){margin-left: 40px;}
+				&:nth-child(3n+1){margin-left: 0;}
+			}
+	.benefits-box{margin: 0 15px 40px;}
+	.certificates-slider{width: 830px;
+		.slick-prev{left: -80px;}
+		.slick-next{right: -80px;}
+	}
+	.production-inner{display: block;}
+		.production-video{display: block;width: 600px;padding-top: 0;margin: 0 auto 30px;}
+		.production-gallery{display: block;}
+			.production-img{margin-left: 40px;
+				&:nth-child(2n+1){margin-left: 40px;}
+			}
+	#map{height: 500px;}
+	footer{
+		.logo{float: none;margin: 0 auto;}
+	}
+	.footer-center{float: none;width: 660px;margin: 0 auto;overflow: hidden;}
+	.footer-right{float: none;margin: 0 auto;}
+}
+
+@media only screen and (max-width:1023px) {
+	.container{width: 740px;}
+	h1{font-size: 54px;}
+	.top-menu ul li a{padding: 0 10px;}
+	.head{height: auto;background-size: cover;padding-bottom: 30px;}
+	.logo{width: 135px;}
+	.slogan{float: right;}
+	.header-right{float: none;width: 100%;overflow: hidden;padding-top: 20px;margin-bottom: 30px;
+		.feedback{width: 270px;margin: 0 auto;}
+	}
+	.house-box{display: none;}
+	.about-video{width: auto;}
+}
